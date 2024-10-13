@@ -1,0 +1,10 @@
+.slick-dots li button:before{
+    font-size: 12px;
+}
+.slick-dots li.slick-active button:before{
+    color:var(--coral)
+    // color:red;
+}
+.dashboardLayout{
+    scrollbar-gutter: stable both-edges;
+}

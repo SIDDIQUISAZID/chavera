@@ -1,0 +1,41 @@
+
+  .label{
+    font-weight: 550 !important;
+    color: "#606060";
+    font-size: '0.75rem';
+
+  }
+  .MuiInputLabel-root {
+    font-size: 0.75rem;
+  }
+  
+  /* If you want to target specific input labels, you can use their class or ID */
+  .label .MuiInputLabel-root {
+    font-size: 0.75rem;
+  }
+
+
+/* Reduce height and inner padding for all input boxes */
+.MuiInputBase-root {
+  height: 30px; /* Adjust the height as needed */
+  padding: 6px;
+}
+
+/* Optionally, you can reduce the inner padding for all input boxes */
+.MuiInputBase-input {
+  padding: 6px; /* Adjust the padding as needed */
+}
+
+/* If you want to target specific input boxes, you can use their class or ID */
+.label .MuiInputBase-root {
+  height: 30px; /* Adjust the height as needed */
+}
+
+/* Optionally, reduce inner padding for specific input boxes */
+.label .MuiInputBase-input {
+  padding: 6px; /* Adjust the padding as needed */
+}
+
+.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.MuiSelect-select{
+  font-size: 0.8rem;
+}

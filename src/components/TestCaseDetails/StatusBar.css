@@ -1,0 +1,44 @@
+.circular-progress-container {
+    position: relative;
+  }
+  
+  .circular-progress-label {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .circular-progress {
+    color: #1BB24E;
+  }
+
+  .test-plan-header-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .test-plan-header-container .text {
+    flex-grow: 1;
+  }
+  
+  .circular-progress-container {
+    display: inline-flex;
+    align-items: center;
+    color: #1BB24E;
+    margin-left: auto;
+  }
+  /* .test-plan-header-container{
+    display: flex;
+    align-items: center;
+  }
+  .test-plan-header-container .circlular-progress{
+    margin-left:auto,
+    display:inline-flex,alignItems: center, color:#1BB24E 
+  } */
+  
+  

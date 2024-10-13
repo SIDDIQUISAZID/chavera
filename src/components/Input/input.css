@@ -1,0 +1,8 @@
+.spinner[type="number"]::-webkit-inner-spin-button, 
+.spinner[type="number"]::-webkit-outer-spin-button {  
+   -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+    opacity: 1;
+}
+

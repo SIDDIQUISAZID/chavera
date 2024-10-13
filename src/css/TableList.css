@@ -1,0 +1,259 @@
+.tableListHeader{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    font-size: 22px;
+}
+
+.tableListHeading{
+    display: flex;
+    align-items: center;
+    width:100%;
+}
+.buttonContainer{
+    width:70%;
+    display: flex;
+    justify-content: end;
+}
+.headerButtons{
+    font-size: 12px !important;
+    padding: 0.5em 1em !important;
+    margin: 0 !important;
+    margin-left: 0.5em !important;
+    border: 1px solid rgb(236, 25, 68) !important;
+    color: rgb(236, 25, 68) !important;
+    text-transform: none !important;
+    line-height: 18px !important;
+    font-weight: 400 !important;
+}
+.headerDisableButtons{
+    font-size: 12px !important;
+    padding: 0.5em 1em !important;
+    margin: 0 !important;
+    margin-left: 0.5em !important;
+    border: 1px solid rgb(236, 25, 68) !important;
+    color: white !important;
+    text-transform: none !important;
+    line-height: 18px !important;
+    font-weight: 400 !important;
+    opacity:0.6;
+    background-color: rgb(236, 25, 68) !important;
+}
+
+.addTableListData{
+    font-size: 12px !important;
+    padding: 0 1em !important;
+    margin: 0 !important;
+    margin-left: 0.5em !important;
+    border: 1px solid rgb(236, 25, 68) !important;
+    background-color: rgb(236, 25, 68) !important;
+    color:white !important;
+    text-transform:none !important;
+    font-size: 12px !important;
+    line-height: 18px !important;
+    font-weight: 400 !important;
+
+}
+
+.availableTableContainer{
+    display: flex;
+    justify-content:start;
+    width:100%;
+}
+
+.availableTableHeading{
+    font-size: 14px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
+    line-height: 18px;
+    font-weight: 500;
+}
+
+.crossIconContainer{
+    width:100%;
+    display:flex;
+    justify-content:end;
+    padding-top: 2%;
+}
+
+.crossItconButton{
+    border:none;
+    background:none;
+    cursor:pointer;
+}
+
+.createBucketHeader{
+    font-size: 18px;
+    font-weight:500;
+    color:rgba(34, 34, 34, 1);
+    margin: 0 1em;
+    border-bottom: 1px solid rgba(229, 229, 229, 1);
+    padding-bottom: 0.5em;
+}
+
+.formContainer{
+    width:91%;
+    margin:1em;
+}
+
+.inputFieldContainer{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5em;
+}
+
+.inputLabel{
+    font-size:12px;
+    line-height:18px;
+    font-weight:500;
+}
+
+.inputField{
+    height: 3em;
+    margin-top: 2%;
+    border-radius: 4px;
+    border: 1px solid rgba(229, 229, 229, 1);
+    outline: none;
+    padding: 0 1em;
+    color: rgba(96, 96, 96, 1);
+}
+.descriptionTextArea{
+    height: 7em;
+    margin-top: 2%;
+    border-radius: 4px;
+    border: 1px solid rgba(229, 229, 229, 1);
+    outline: none;
+    padding: 1em 1em;
+    color: rgba(96, 96, 96, 1);
+}
+.createButton{
+    margin: 0 1em;
+    display: flex;
+    justify-content: end;
+    padding: 1em 0;
+    border-top: 1px solid rgba(229, 229, 229, 1);
+    margin-top: 2em;
+}
+
+.assignBucketHeader{
+    border-bottom: 1px solid rgba(229, 229, 229, 1);
+    margin: 0 1em;
+    display:flex;
+    justify-content:space-between;
+}
+
+.assignBucketHeading{
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    color: rgba(34, 34, 34, 1);
+    padding-bottom:0.5em;
+}
+
+.totalDevice{
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    margin-right: 6%;
+    color: rgba(96, 96, 96, 1);
+}
+  .deleteContainer{
+    text-align:center;
+    padding: 0 1em;
+  }
+  .cancleIcon{
+    font-size: 40px;
+    color: rgb(236, 25, 68);
+  }
+  .deleteHeading{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+  }
+  .deleteContent{
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+    color:rgba(96, 96, 96, 1);
+    padding: 1em 0px;
+  }
+  .deleteButtonsContainer{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1em;
+  }
+  .cancleButton{
+    background: none !important;
+    border: none !important;
+    cursor: pointer !important;
+    line-height: 18px !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    margin-right: 1em !important;
+  }
+  .deleteButton{
+    background: none !important;
+    border: none !important;
+    background-color: rgb(236, 25, 68) !important;
+    color: white !important;
+    padding: 0.7em 1em !important;
+    border-radius: 4px !important;
+    cursor: pointer !important;
+  }
+
+  .listTable{
+    font-size:0.7rem;
+    color:rgba(96, 96, 96, 1);
+    font-weight:400; 
+    padding:0;
+    margin:0;
+    min-width: 100px;
+
+  }
+  .listTableCell{
+    font-size:0.7rem;
+    color:rgba(96, 96, 96, 1);
+    font-weight:400;
+    padding:0;
+    margin:0;
+    min-width: 140px;
+
+  }
+  .tableCheckbox{
+    font-size: 14px !important;
+    background-color:rgba(240, 237, 237, 1) !important;
+  }
+  .tableHeader{
+    background-color:rgba(240, 237, 237, 1) !important;
+    font-size: 14px !important;
+    font-weight:500 !important;
+    padding:1em 0 !important;
+  }
+  .tableAction{
+    background-color:rgba(240, 237, 237, 1) !important;
+    font-size: 14px !important;
+    font-weight:500 !important;
+    padding:0 !important
+  }
+  .actionButtons{
+    border:none !important;
+    background:none;
+    cursor:pointer ;
+    align-items: center;
+  }
+  .actionIcon{
+    color:rgb(236, 25, 68) !important;
+    font-size:20px !important;
+  }
+  .deviceHealthIcon{
+    font-size: 20px !important;
+  }
+  .rbc-event-label {
+    display: none;
+  } 
+  .rbc-month-view{ display: block !important;}
+
+
+

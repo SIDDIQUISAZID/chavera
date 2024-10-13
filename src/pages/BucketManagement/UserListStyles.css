@@ -1,0 +1,31 @@
+/* UserListStyles.css */
+
+/* Reduce the height of the toolbar */
+.MuiToolbar-root {
+  height: 40px;
+}
+
+/* Reduce the height and add padding to the TableCell headers */
+.MuiTableCell-head {
+  height: 20px;
+  padding: 0rem;
+}
+.MuiTableCell-body {
+  height: 20px;
+  padding: 0rem;
+}
+.css-1ex1afd-MuiTableCell-root {
+}
+.css-1ex1afd-MuiTableCell-body {
+}
+.css-1ygcj2i-MuiTableCell-root {
+}
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #ec1944;
+  border-color: #ec1944;
+}
+.hover:before {
+  background-color: #ecf2f4;
+}
+
+/* Add additional custom styles as needed */

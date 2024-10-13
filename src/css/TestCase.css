@@ -1,0 +1,126 @@
+.testCaseHeading{
+
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 1em;
+    color: rgba(34, 34, 34, 1);
+
+}
+.testCaseheader{
+    display: flex;
+    margin: 0 1em;
+    padding: 0.5em 0;
+}
+
+.testCaseId{
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(236, 25, 68, 1);
+    line-height: 18px;
+    margin-right: 1em;
+}
+
+.executionTime{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: rgba(27, 178, 78, 1);
+
+}
+
+.availableDevice{
+    border-bottom: 1px solid rgba(229, 229, 229, 1);
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(34, 34, 34, 1);
+    margin: 0 1em;
+    padding: 0.5em 0;
+}
+
+.testCaseFormContainer{
+    max-height: 260;
+    overflow-Y: auto;
+    width: 96%;
+    margin: 1em 0 1em 1em;
+
+}
+
+.testCaseForm{
+    background-color: 	rgb(240, 240, 240, 1);
+    padding: 0.8em;
+    width: 97%;
+
+}
+
+.formFieldContainer{
+    padding: 0.4em 0.8em;
+    width: 99%;
+    display: flex;
+}
+
+.dutNumber{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(34, 34, 34, 1);
+    line-height: 18px;
+    margin-bottom: 0.8em;
+
+}
+
+.testCaseInputContainer{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5em;  
+    margin-right: 0.8em;
+    width: 50%;
+}
+
+.actionButtonContainer{
+    margin: 0 1em;
+    display: flex;
+    justify-content: end;
+    padding: 1em 0;
+    border-top: 1px solid rgba(229, 229, 229, 1);
+    margin-top: 1em;
+}
+
+.optionValue{
+    font-size: 0.9em;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.6);
+
+}
+
+.testCaseStatusContainer{
+    display: flex;
+    margin: 1em;
+    justify-content: space-between
+}
+
+.testCaseStatusLable{
+    color: rgba(34, 34, 34, 1);
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 500,
+}
+
+.inProgressStatus{
+    color: rgba(253, 96, 7, 1);
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.testCaseHeaderIcon{
+    margin: 0px 0px 0px 0.5em;
+    border: 1px solid rgba(229, 229, 229, 1);
+    color: black;
+    background: none;
+    width: 5%;
+    height: 35px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* cursor: pointer; */
+}

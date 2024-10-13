@@ -1,0 +1,11 @@
+.ant-table-body table {
+  height: 100%;
+  height: calc(100vh - 345px);
+}
+/* Target the header row */
+.ant-table-thead > tr > th {
+  background-color: #ffe9ed !important; /* Change to desired background color */
+  color: #606060;
+  font-weight: bold;
+  border-radius: 0px !important;
+}

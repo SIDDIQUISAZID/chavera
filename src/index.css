@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  :root {
+    /* --blue-dark: #446aa8; */
+    /* --rgb-blue-dark: 95 115 155; */
+    --rgb-blue-dark: 3 4 94;
+    --blue-dark: rgb(var(--rgb-blue-dark));
+
+    --rgb-blue-medium: 144 165 209;
+    --blue-medium: rgb(var(--rgb-blue-medium));
+
+    --rgb-blue-light: 201 218 248;
+    --blue-light: rgb(var(--rgb-blue-light));
+
+    --rgb-blue-lightest: 242 247 254;
+    --blue-lightest: rgb(var(--rgb-blue-lightest));
+
+    --rgb-gray-dark: 102 102 102;
+    --gray-dark: rgb(var(--rgb-blue-dark));
+
+    --rgb-gray-light: 204 204 204;
+    --gray-light: rgb(var(--rgb-gray-light));
+
+    --rgb-coral: 243 115 88;
+    --coral: rgb(var(--rgb-coral));
+
+    --rgb-peach: 248 215 196;
+    --peach: rgb(var(--rgb-peach));
+
+    --sand: #f3e9e2;
+    --sage: #d8e1dc;
+  }
+  @font-face {
+    font-family: "Poppins CF";
+    src: url("../public/assets/fonts/Poppins/Poppins-Regular.ttf");
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: "Poppins W";
+    src: url("../public/assets/fonts/Poppins/Poppins-Regular.ttf");
+    font-weight: 500;
+  }
+
+  .font-argent {
+    letter-spacing: 0.015em;
+  }
+}
+.appointment .rbc-timeslot-group {
+  min-height: 80px;
+}
+.rbc-header.rbc-today {
+  color: var(--coral);
+}
+.rbc-time-content {
+  border: none;
+}
+.rbc-time-header.rbc-overflowing {
+  background: var(--blue-lightest);
+}
+/* .rbc-toolbar button:active, .rbc-toolbar button.rbc-active{
+  box-shadow: none;
+} */
+/* dashboard calendar */
+.appointment-list .rbc-today {
+  background-color: #fff;
+}
+
+/* react slick slider */
+.slick-slide {
+  padding: 0 5px !important;
+}
+/* the parent */
+.slick-list:first-child {
+  padding: 0 -5px;
+}
+@layer utilities {
+  .hide-date-icon::-webkit-inner-spin-button,
+  .hide-date-icon::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    -webkit-appearance: none;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.4em;
+}
+/* ::-webkit-scrollbar-button {
+  background: #ccc;
+} */
+::-webkit-scrollbar-track-piece {
+  background: var(--blue-lightest);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--blue-dark);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.animate-bounce-x:hover {
+  animation: bounce 1s infinite;
+}
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateX(-25%);
+    /* animation-timing-function: cubic-bezier(0.8, 0, 1, 1); */
+  }
+  50% {
+    transform: translateX(0);
+    /* animation-timing-function: cubic-bezier(0, 0, 0.2, 1); */
+  }
+}
+.overflow-overlay {
+  overflow: overlay;
+}
+
+#webpack-dev-server-client-overlay {
+  display: none !important;
+}
+
+

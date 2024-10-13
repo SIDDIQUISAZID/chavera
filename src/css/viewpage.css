@@ -1,0 +1,124 @@
+
+.carousel-container {
+    height: 100vh;
+    background-color: #EC1944;
+  }
+  .second-slide {
+    /* background-image: url('/public/img/slider2.png'); */
+    background-color: white;
+    background-size: cover;
+ 
+  }
+
+  .third-slide{
+    background: url('/public/img/third-slide.gif');
+    background-size: cover;
+
+  }
+
+  
+  .carousel-col {
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .carousel-content {
+    max-height: 100%;
+    object-fit: cover;
+  }
+  
+  .carousel-title {
+    color: white;
+    text-align: center;
+    font-family: 'Rapidly';
+  }
+  
+  .carousel-logo {
+    width: 100%;
+    max-width: 200px;
+    margin: 62px auto;
+    display: block;
+  }
+  
+  .carousel-description {
+    color: white;
+    text-align: center;
+   
+  }
+
+  .custom-dot{
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+  }
+  .second-slider-img{
+    align-items: center;
+    display: flex;
+
+  }
+.card-container {
+  display: flex !important;
+  justify-content: center;
+  margin-top: 15%;
+  align-items: center;
+}
+
+.view-card {
+  width: 30%;
+  height: 413px;
+  position: relative;
+  border-radius: 10px;
+  background: url('/public/img/tower.png') center/cover;
+  margin: 0 10px;
+  transition: background 0.3s ease, opacity 0.3s ease; /* Added opacity transition */
+  opacity: 1;
+  z-index: 1;
+  transition: opacity 2s ease-in-out;
+}
+
+.view-card:hover::after {
+  opacity: 1;
+}
+.view-card::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to top, #334c9d 0%, transparent 100%);
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.view-card h2,
+.view-card p {
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.gif-slide {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.gif-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  .slick-slider {
+    width: 100% !important;
+  }
+}
+
+  
