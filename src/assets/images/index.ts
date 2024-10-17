@@ -14,4 +14,6 @@ export { default as DeviceWithBG } from "./DeviceWithBG.png";
 export { default as HospitalImg } from "./hospital-img.png";
 export { default as BarChartImg } from "./barChart.svg";
 export { default as ComingSoonImg } from "./ComingSoon.png";
+export { default as MeditechLogo } from "../icons/meditech_logo.png";
+
 

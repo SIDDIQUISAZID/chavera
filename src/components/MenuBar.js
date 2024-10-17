@@ -131,7 +131,7 @@ const AppMenu = () => {
         />
       </ListItem>
 
-      <div>
+      {/* <div>
         {userType === "Admin"
           ? sideBarData.map((parent, index) => (
               <React.Fragment key={index}>
@@ -315,7 +315,51 @@ const AppMenu = () => {
                 </Collapse>
               </React.Fragment>
             ))}
-      </div>
+      </div> */}
+
+      {/* {userType === "Admin" && (
+        <ListItem
+          onClick={() => handleClickDashBoard("/testresultHub")}
+          selected={currentTab === "/testresultHub"}
+          sx={{
+            borderBottom: "1px solid rgba(229, 229, 229, 1)",
+            "& .MuiListItemIcon-root": {
+              minWidth: "30px", // Set minimum width for the ListItemIcon
+            },
+            "&.Mui-selected": {
+              borderBottom: "1px solid rgba(236, 25, 68, 1)",
+
+              backgroundColor: "rgba(253, 53, 53, 0.15)", // Customize background color when selected
+            },
+          }}
+        >
+          <ListItemIcon>
+            {window?.location?.pathname === "/testresultHub" ? (
+              <IV_ACTIVE_RESULT_HUB />
+            ) : (
+              <IV_INACTIVE_RESULT_HUB />
+            )}
+          </ListItemIcon>
+          <ListItemText
+            primaryTypographyProps={{
+              sx: {
+                fontSize: "12px",
+                fontWeight: 500,
+                fontFamily: "Poppins CF",
+                color:
+                  window?.location?.pathname === "/testresultHub"
+                    ? "#EC1944"
+                    : "#606060",
+                cursor: "pointer",
+              },
+            }}
+            variant="body1"
+            primary="BAXTER"
+            sx={{ flexGrow: 1 }}
+          />
+        </ListItem>
+        
+      )} */}
 
       {userType === "Admin" && (
         <ListItem
@@ -363,8 +407,8 @@ const AppMenu = () => {
 
       {userType === "Admin" && (
         <ListItem
-          onClick={() => handleClickDashBoard("/testresultHub")}
-          selected={currentTab === "/testresultHub"}
+          onClick={() => handleClickDashBoard("products/baxter")}
+          selected={currentTab === "products/baxter"}
           sx={{
             borderBottom: "1px solid rgba(229, 229, 229, 1)",
             "& .MuiListItemIcon-root": {
@@ -378,7 +422,7 @@ const AppMenu = () => {
           }}
         >
           <ListItemIcon>
-            {window?.location?.pathname === "/testresultHub" ? (
+            {window?.location?.pathname === "products/baxter" ? (
               <IV_ACTIVE_RESULT_HUB />
             ) : (
               <IV_INACTIVE_RESULT_HUB />
@@ -391,7 +435,7 @@ const AppMenu = () => {
                 fontWeight: 500,
                 fontFamily: "Poppins CF",
                 color:
-                  window?.location?.pathname === "/testresultHub"
+                  window?.location?.pathname === "products/baxter"
                     ? "#EC1944"
                     : "#606060",
                 cursor: "pointer",
@@ -402,7 +446,9 @@ const AppMenu = () => {
             sx={{ flexGrow: 1 }}
           />
         </ListItem>
+        
       )}
+     
       <List component="nav">
         {userType === "Admin"
           ? settingsData.map((parent, index) => (

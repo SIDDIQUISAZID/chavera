@@ -12,13 +12,13 @@ import {
 
 export let sideBarData = [
   {
-    name: "User Management",
+    name: "BAXTER",
     node: "user",
     img: activeProfileIcon,
     imgActive: InActiveProfileIcon,
     children: [
       {
-        name: "Users",
+        name: "BAXTER",
 
         url: "user/userList",
         type: "list",

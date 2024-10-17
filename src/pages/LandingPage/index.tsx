@@ -80,6 +80,7 @@ const LandingPage = ({ title }: { title: string }) => {
         >
           <div className=" mx-14 flex items-center justify-between">
             <IV_NEW_LOGO />
+
             <div className="justify-center items-center">
               <button
                 title="Close popup"
