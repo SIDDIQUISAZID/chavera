@@ -104,16 +104,6 @@ const AppMenu = () => {
           },
         }}
       >
-        <ListItemIcon>
-          <img
-            src={
-              window?.location?.pathname === "/"
-                ? `/img/iv_active_dashboard.svg`
-                : `/img/graph.svg`
-            }
-            alt="Dish"
-          />
-        </ListItemIcon>
         <ListItemText
           primaryTypographyProps={{
             sx: {
@@ -126,7 +116,7 @@ const AppMenu = () => {
             //color: currentTab === parent.node ? "#EC1944" : "#606060"
           }}
           variant="body1"
-          primary="Dashboard"
+          primary="Products"
           sx={{ flexGrow: 1 }}
         />
       </ListItem>
@@ -361,95 +351,16 @@ const AppMenu = () => {
         
       )} */}
 
-      {userType === "Admin" && (
-        <ListItem
-          onClick={() => handleClickDashBoard("/scheduleExecute")}
-          selected={currentTab === "/scheduleExecute"}
-          sx={{
-            borderBottom: "1px solid rgba(229, 229, 229, 1)",
-            "& .MuiListItemIcon-root": {
-              minWidth: "30px", // Set minimum width for the ListItemIcon
-            },
-            "&.Mui-selected": {
-              borderBottom: "1px solid rgba(236, 25, 68, 1)",
+    
 
-              backgroundColor: "rgba(253, 53, 53, 0.15)", // Customize background color when selected
-            },
-          }}
-        >
-          <ListItemIcon>
-            {window?.location?.pathname === "/scheduleExecute" ? (
-              <IV_ACTIVE_RESULT_HUB />
-            ) : (
-              <IV_INACTIVE_RESULT_HUB />
-            )}
-          </ListItemIcon>
-          <ListItemText
-            primaryTypographyProps={{
-              sx: {
-                fontSize: "12px",
-                fontWeight: 500,
-                fontFamily: "Poppins CF",
-                color:
-                  window?.location?.pathname === "/scheduleExecute"
-                    ? "#EC1944"
-                    : "#606060",
-                cursor: "pointer",
-              },
-              //color: currentTab === parent.node ? "#EC1944" : "#606060"
-            }}
-            variant="body1"
-            primary="Schedule & Execute"
-            sx={{ flexGrow: 1 }}
-          />
-        </ListItem>
-      )}
-
-      {userType === "Admin" && (
-        <ListItem
-          onClick={() => handleClickDashBoard("products/baxter")}
-          selected={currentTab === "products/baxter"}
-          sx={{
-            borderBottom: "1px solid rgba(229, 229, 229, 1)",
-            "& .MuiListItemIcon-root": {
-              minWidth: "30px", // Set minimum width for the ListItemIcon
-            },
-            "&.Mui-selected": {
-              borderBottom: "1px solid rgba(236, 25, 68, 1)",
-
-              backgroundColor: "rgba(253, 53, 53, 0.15)", // Customize background color when selected
-            },
-          }}
-        >
-          <ListItemIcon>
-            {window?.location?.pathname === "products/baxter" ? (
-              <IV_ACTIVE_RESULT_HUB />
-            ) : (
-              <IV_INACTIVE_RESULT_HUB />
-            )}
-          </ListItemIcon>
-          <ListItemText
-            primaryTypographyProps={{
-              sx: {
-                fontSize: "12px",
-                fontWeight: 500,
-                fontFamily: "Poppins CF",
-                color:
-                  window?.location?.pathname === "products/baxter"
-                    ? "#EC1944"
-                    : "#606060",
-                cursor: "pointer",
-              },
-            }}
-            variant="body1"
-            primary="Test Results Hub"
-            sx={{ flexGrow: 1 }}
-          />
-        </ListItem>
-        
-      )}
      
-      <List component="nav">
+      
+      
+      
+      
+     
+     
+      {/* <List component="nav">
         {userType === "Admin"
           ? settingsData.map((parent, index) => (
               <React.Fragment key={index}>
@@ -627,7 +538,7 @@ const AppMenu = () => {
                 </Collapse>
               </React.Fragment>
             ))}
-      </List>
+      </List> */}
     </List>
   );
 };

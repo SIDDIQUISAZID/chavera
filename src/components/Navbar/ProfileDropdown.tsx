@@ -108,7 +108,7 @@ const ProfileDropdown = ({ userData }: { userData: UserInfo }) => {
 
   return (
     <div data-testid="ProfileDropdown">
-      <div className="relative flex items-center gap-3" ref={profileRef}>
+      <div className="flex items-center gap-3 " ref={profileRef}>
         <div className="font-poppins_cf text-theme-black flex flex-wrap items-center text-sm mt-1 ">
         <ul className="flex items-center gap-4">
           <li onClick={() => navigate('/about')} className="cursor-pointer mb-2">About</li>

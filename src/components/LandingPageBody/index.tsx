@@ -94,10 +94,10 @@ function index({props}:any) {
                 variant="contained"
                 endIcon={<EastIcon />}
                 sx={{
-                  background: "#EC1944",
+                  background: "#14FBD9",
                   borderRadius: "22px",
                   textTransform: "none",
-                  color: "white",
+                  color: "black",
                   zIndex: 1,
                   "&:hover": {
                     background: "white",

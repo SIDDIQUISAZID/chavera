@@ -1,4 +1,4 @@
-import React from "react";
+import { IC_CHAVER_LOGO } from "../../assets/images";
 import { IV_NEW_LOGO } from "../../assets/icons";
 
 export default function Footer() {
@@ -8,7 +8,8 @@ export default function Footer() {
         <div className="mx-14 flex items-center justify-between">
           {" "}
           <div className=" text flex items-center text-left font-poppins_cf text-xs font-normal">
-            <IV_NEW_LOGO className="h-6" />
+            <img src={IC_CHAVER_LOGO} className="h-6" />
+
             <div className="items-center"> © 2024. All rights reserved</div>
           </div>
           <div className="text space-x-2 font-poppins_cf text-xs font-normal">

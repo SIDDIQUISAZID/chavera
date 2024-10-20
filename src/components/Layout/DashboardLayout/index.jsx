@@ -25,6 +25,7 @@ import PageLoader from "../../Loader/PageLoader";
 import "./index.scss";
 import { AppLogoWhite,IV_HAMBURGER,IV_LOGOUT} from "../../../assets/icons";
 import { useAppDispatch, useAppSelector } from "../../../app/hooks";
+import { IC_CHAVER_LOGO } from "../../../assets/images";
 import {
   getTokenFromLocal,
   getUserFromLocal,
@@ -241,99 +242,31 @@ const DashboardLayout = () => {
 
   return (
     <>
-      <div className="flex flex-row ">
-        <Box className="flex">
-          <AppBar
-            elevation={1}
-            position="fixed"
-            
-            sx={{ background: "white", border: "none" }}
-            open={open}
-          >
-            <Toolbar elevation={0}>
-              <IconButton
-                color="inherit"
-                aria-label="open drawer"
-                onClick={handleDrawerOpen}
-                edge="start"
-                sx={{
-                  marginRight: 0,
-                 
-                  ...(open && { display: "none" }),
-                }}
-              >
-                <IV_HAMBURGER  />
-              </IconButton>
-              <div
-                style={{
-                  width: "100%",
-                  display: "flex",
-                  justifyContent: "end",
-                  marginRight: "1em",
-                  alignItems: "center",
-                }}
-              >
-                <div data-testid="ProfileDropdown">
+      <div className="bg-white-700">
+        {/* <div className="flex w-full  "> */}
+        
+
+          
+             <div elevation={0} className="py-4 flex justify-between">
+              <img src={IC_CHAVER_LOGO} className="h-6"></img>
+            <div data-testid="ProfileDropdown">
                   <div className="relative flex items-center ">
                     <ProfileDropdown userData={userData} />
                   </div>
                 </div>
-              </div>
-              <Typography
-                sx={{
-                  fontSize: "1.4rem",
-                  fontFamily: "Poppins",
-                }}
-                noWrap
-                component="div"
-              ></Typography>
-            </Toolbar>
-          </AppBar>
-          <Drawer
-            variant="permanent"
+            </div>
+          {/* <AppBar
+            elevation={1}
+            // position="fixed"
+            
+            sx={{ background: "white", border: "none",   }}
             open={open}
-            PaperProps={{ style: { border: "none" } }}
           >
-            <DrawerHeader
-              style={{
-                background:
-                  "linear-gradient(268.81deg, #9D2236 0.24%, #E10C32 51%, #EC1944 96.74%)",
-              }}
-            >
-              <ListSubheader
-                style={{
-                  display: "flex",
-                  background: "none",
-                  marginRight: "10%",
-                }}
-              >
-                <AppLogoWhite />
-              </ListSubheader>
-              <Divider />
-              <IconButton
-                style={{
-                  width: "34px",
-                  height: "34px",
-                  left: "20px",
-                  background: "white",
-                  borderRadius: "17px",
-                }}
-                onClick={handleDrawerClose}
-              >
-                {theme.direction === "rtl" ? (
-                  <ChevronRightIcon />
-                ) : (
-                  <ChevronLeftIcon />
-                )}
-              </IconButton>
-            </DrawerHeader>
-            <Divider />
-            <AppMenu />
-
          
-          </Drawer>
-        </Box>
-        <div className="dashboardLayout overflow-overlay scrollbar-track-blue-lightest scrollbar-thumb-blue-dark mt-16 flex h-[calc(100vh-60px)] w-full justify-center overflow-auto bg-[#FAF5FE] p-4 px-4 scrollbar-thin md:h-[calc(100vh-110px)] ">
+          </AppBar> */}
+         
+        {/* </div> */}
+        <div className="dashboardLayout overflow-overlay scrollbar-track-blue-lightest scrollbar-thumb-blue-dark  flex h-[calc(100vh-60px)] w-full justify-center overflow-auto bg-[#FAF5FE] p-4 px-4 scrollbar-thin md:h-[calc(100vh-110px)] ">
           <Suspense fallback={<PageLoader />}>
             <Outlet className="bg-black" />
           </Suspense>

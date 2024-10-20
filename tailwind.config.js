@@ -21,7 +21,7 @@ module.exports = {
       },
       colors: {
         theme: {
-          dark: "#EC1944",
+          dark: "#14BFD9",
           black: "#222222",
           tableHeader: "#F0EDED",
           backgroundColor:'#FAF5FE',

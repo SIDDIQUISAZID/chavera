@@ -8,6 +8,7 @@ import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
 import ForgetPassword from "./ForgetPassword";
 import ResetPassword from "./ResetPassword";
 import Login from "./Login";
+import { IC_CHAVER_LOGO } from "../../assets/images";
 import {
   InActiveProfileIcon,
 } from "../../assets/icons";
@@ -78,8 +79,8 @@ const LandingPage = ({ title }: { title: string }) => {
             borderBottom: "1px solid #e0e0e0",
           }}
         >
-          <div className=" mx-14 flex items-center justify-between">
-            <IV_NEW_LOGO />
+          <div className=" mx-14  flex items-center justify-between">
+            <img  src={IC_CHAVER_LOGO} className="h-8"></img>
 
             <div className="justify-center items-center">
               <button

@@ -19,6 +19,70 @@
   }
 }
 
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  /* background-image: url('banner-image.jpg');  */
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3em;
+}
+
+.hero p {
+  font-size: 1.5em;
+}
+
+.section {
+  padding: 50px;
+  text-align: center;
+}
+
+.product-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.product {
+  width: 300px;
+  margin: 20px;
+  text-align: center;
+}
+
+.product img {
+  max-width: 200px;
+  height: auto;
+}
+
+.cta {
+  background-color: #0a74da;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.cta a {
+  color: white;
+  padding: 15px 25px;
+  background-color: #007BFF;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 0 10px;
+}
+
+
 
 
 

@@ -1,4 +1,5 @@
 import { IV_NEW_LOGO } from "../../assets/icons";
+import { IC_CHAVER_LOGO } from "../../assets/images";
 
 type Props = {
     direction?: string,
@@ -12,10 +13,10 @@ const Footer = ({ direction }: Props) => {
             >
 
 
-                <div className=" flex  justify-around mx-auto py-4">
+                <div className=" flex  justify-between mx-auto py-4 px-4">
                     {" "}
-                    <div className=" text flex items-center text-left  font-poppins_cf text-xs font-normal ml-40">
-                        <IV_NEW_LOGO className="h-6" />
+                    <div className=" text flex items-center text-left  font-poppins_cf text-xs font-normal ">
+                        <img  src={IC_CHAVER_LOGO} className="h-6" />
                         <div className="items-center text-theme-grey text-xs poppins_cf"> © 2024. All rights reserved</div>
                     </div>
                     <div className="text flex gap-2 space-x-2 font-poppins_cf text-xs font-normal">
