@@ -34,6 +34,9 @@ import ConfigFiles from './pages/ServerConfig/ConfigFiles';
 import Baxter from './pages/Products/Baxter';
 import BaxterViewList from './pages/Products/BaxterViewList';
 import ProductDetail from './pages/Products/ProductDetails';
+import EnquiryPage from './pages/Career/Career';
+import CareerPage from './pages/Career/Careers';
+import Contact from './pages/Career/Contact';
 const NotFound = lazy(() => import('./pages/NotFound'));
 
 
@@ -81,7 +84,10 @@ export const ROUTES = {
     SCHEDULE_EXECUTE: '/scheduleExecute',
     SCHEDULE_EXECUTE_PLAN: '/scheduleExecute/ScheduleTestPlan/:scheduleType/:startDate/:endDate',
     TEST_PLAN_RESULT: 'products/baxter',
-    VIEW_BAXTER_DETAILS:'products/baxter/details/:id'
+    VIEW_BAXTER_DETAILS:'products/baxter/details/:id',
+    CAREER_PAGE:'/enquiry',
+    CAREERS_PAGE:'/careers',
+    CONTACT_PAGE:'/contact',
 
 }
 // as const
@@ -133,6 +139,10 @@ const Router = () => {
                     <Route path={ROUTES.TEST_PLAN_RESULT} element={<Baxter />} />
                     <Route path={ROUTES.NOTIFICATIONS_DETAILS} element={<NotificationsDetail />} />
                     <Route path={ROUTES.VIEW_BAXTER_DETAILS} element={<ProductDetail />} />
+                    <Route path={ROUTES.CAREER_PAGE} element={<EnquiryPage />} />
+                    <Route path={ROUTES.CAREERS_PAGE} element={<CareerPage />} />
+                    <Route path={ROUTES.CONTACT_PAGE} element={<Contact />} />
+                    
                     <Route path={"*"} element={<NotFound title={`Page Not Found | ${APP_TITLE}`} />} />
 
                 </Route>
