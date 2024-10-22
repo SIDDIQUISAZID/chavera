@@ -30,27 +30,29 @@ const ProductList = () => {
         <div className="rounded-md">
           <h1 className="text-4xl font-bold">{products.name}</h1>
           <p className="mt-4 text-lg font-medium">
-            The branch of medicine that deals with the physiology and diseases of the kidneys. 
-            Here at Meditech Devices we offer a wide range of disposable products to provide 
-            our patients with quality care.
+            The branch of medicine that deals with the physiology and diseases
+            of the kidneys. Here at Meditech Devices we offer a wide range of
+            disposable products to provide our patients with quality care.
           </p>
         </div>
       </div>
-      <div className="mb-4 justify-start flex"><nav >
-        <Link to="/" className={isActive("/")}>
-          Home
-        </Link>{" "}
-        &gt;
-        <Link to="/products/baxter" className={isActive("/products/baxter")}>
-          Products
-        </Link>
-      </nav></div>
-      
-      <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+      <div className="mb-4 flex justify-start">
+        <nav>
+          <Link to="/" className={isActive("/")}>
+            Home
+          </Link>{" "}
+          &gt;
+          <Link to="/products/baxter" className={isActive("/products/baxter")}>
+            Products
+          </Link>
+        </nav>
+      </div>
+
+      <div className="grid grid-cols-1 gap-8 p-8 md:grid-cols-3">
         {products.map((product) => (
           <div
             key={product.id}
-            className="flex flex-col border bg-white p-4 shadow-md"
+            className="flex flex-col rounded-lg border bg-white p-4 "
           >
             <img
               src="https://images.stockcake.com/public/2/7/8/2786aaa1-66ae-4360-8af3-160232beced6/medical-equipment-stand-stockcake.jpg"
