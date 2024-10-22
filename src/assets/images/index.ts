@@ -19,6 +19,8 @@ export { default as IC_CHAVER_LOGO} from "../icons/chavera_logo2.png";
 export { default as IC_WELCOME_LOGO} from "../icons/welcomebg.jpg";
 export { default as IC_WELCOME_BG} from "../icons/inner-bannerbg.png";
 export { default as IC_ENQUIRY_IMG} from "../icons/careerbanner.png";
+export { default as DOCTOR_IMG} from "../icons/doctor.png";
+export {default as arabHealthImg } from "../icons/arab-health.png"
 
 
 

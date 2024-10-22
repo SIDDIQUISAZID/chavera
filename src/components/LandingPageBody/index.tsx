@@ -1,8 +1,14 @@
 import React, { useState } from "react";
 import Footer from "../Footer";
-import { IC_WELCOME_LOGO, IC_CHAVER_LOGO } from "../../assets/images";
+import {
+  IC_WELCOME_LOGO,
+  IC_CHAVER_LOGO,
+  DOCTOR_IMG,
+  arabHealthImg,
+} from "../../assets/images";
 import { IC_WELCOME_BG } from "../../assets/images";
 import { IV_RIGHT_ARROW } from "../../assets/icons";
+import { useNavigate } from "react-router-dom";
 interface Product {
   id: number;
   name: string;
@@ -115,7 +121,9 @@ const placeholderImage3 =
   "https://via.placeholder.com/600x400?text=Medical+Device+3";
 const placeholderLogo = "https://via.placeholder.com/150x50?text=Meditech+Logo"; // Placeholder for logo
 const welcomeBackground = IC_WELCOME_LOGO; // Placeholder for welcome background
-const welcomeBackgroundImg = IC_WELCOME_BG
+const welcomeBackgroundImg = IC_WELCOME_BG;
+const doctorImg = DOCTOR_IMG;
+const arabHealthImg1 = arabHealthImg;
 
 const LandingPage = () => {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -136,15 +144,22 @@ const LandingPage = () => {
     );
   };
 
+  const navigate = useNavigate();
+
+  const handleViewDetails = () => {
+    navigate("/");
+  };
+
   return (
     <div className="landing-page">
       {/* Header Section */}
-    
-
 
       {/* Hero Section */}
-    
-      <section  style={{ backgroundImage: `url(${welcomeBackgroundImg})` }} className="relative bg-blue-900 py-16 text-center text-white">
+
+      <section
+        style={{ backgroundImage: `url(${welcomeBackgroundImg})` }}
+        className="relative h-fit bg-blue-900 py-16 text-center text-white"
+      >
         <h1 className="mb-2 text-4xl font-bold">Biopsy</h1>
         <p className="mx-auto max-w-3xl text-lg">
           For identifying any tissue, we need to take samples of tissue and lab
@@ -237,10 +252,11 @@ const LandingPage = () => {
                   {product.description}
                 </p>
               </div>
-              <div className="p-6 pt-0 flex">
+              <div className="flex p-6 pt-0">
                 <a
+                  onClick={handleViewDetails}
                   href="#"
-                  className="font-medium text-red-600 hover:text-red-800 flex items-center gap-1"
+                  className="flex items-center gap-1 font-medium text-red-600 hover:text-red-800"
                 >
                   View Products <IV_RIGHT_ARROW />
                 </a>
@@ -249,6 +265,59 @@ const LandingPage = () => {
           ))}
         </div>
       </section>
+
+      <div className=" grid grid-cols-1 gap-12 md:grid-cols-2 ">
+        {/* Left Section - Our Events */}
+        <div className="space-y-8 px-4 py-4">
+          <h2 className="text-2xl font-semibold text-gray-700">Our Events</h2>
+          <div className="rounded-md p-6 ">
+            <h3 className="text-lg font-bold text-purple-800">Arab Health</h3>
+            <img
+              src={arabHealthImg1}
+              alt="Arab Health Event"
+              className="mt-4  h-32 w-full object-contain"
+            />
+            <p className="mt-4 font-medium text-red-500">
+              30 January - 2 February 2017
+            </p>
+            <p className="mt-2 text-sm text-gray-600">
+              Dubai International Convention & Exhibition Centre
+            </p>
+          </div>
+        </div>
+
+        {/* Right Section - Download Brochures */}
+        <div className="relative py-4 px-4">
+          <img
+            src={doctorImg}
+            alt="Doctor"
+            className="absolute right-0 top-0 hidden h-full md:block"
+          />
+          <div className="space-y-8">
+            <h2 className="text-2xl font-semibold text-gray-700">
+              Download Our Brochures
+            </h2>
+            <ul className="space-y-4">
+              {[
+                "UROLOGY",
+                "NEPHROLOGY",
+                "ONCOLOGY",
+                "ANESTHETIC & ICU",
+                "BIOPSY - RADIOLOGY",
+                "GASTROENTEROLOGY",
+              ].map((item, index) => (
+                <li
+                  key={index}
+                  className="flex items-center space-x-2 text-purple-600"
+                >
+                  <span className="text-lg">➤</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>
 
       <div className=" mx-auto  w-full ">
         {" "}

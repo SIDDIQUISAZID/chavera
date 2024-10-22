@@ -83,7 +83,7 @@ export const ROUTES = {
     TEST_PLAN_DETAILS: '/testresultHub/testPlanDetails',
     SCHEDULE_EXECUTE: '/scheduleExecute',
     SCHEDULE_EXECUTE_PLAN: '/scheduleExecute/ScheduleTestPlan/:scheduleType/:startDate/:endDate',
-    TEST_PLAN_RESULT: 'products/baxter',
+    TEST_PLAN_RESULT: '/products/baxter',
     VIEW_BAXTER_DETAILS:'products/baxter/details/:id',
     CAREER_PAGE:'/enquiry',
     CAREERS_PAGE:'/careers',
