@@ -259,7 +259,7 @@ const LandingPage = () => {
 
       <section className="bg-gray-100 px-20 py-20">
         <div className="mx-auto mb-12 text-center">
-          <h2 className="text-xl font-medium text-theme-black font-poppins_w">Our Products</h2>
+          <h2 className="text-4xl font-medium text-theme-black font-poppins_w">Our Products</h2>
           <p className="text-theme-grey text-base font-poppins_cf">
             Explore our wide range of high-quality medical devices.
           </p>

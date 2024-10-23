@@ -19,6 +19,7 @@ const ProductList = () => {
 
   return (
     <div className="flex h-fit flex-col items-center">
+      
       <div
         className="flex h-64 w-full items-center justify-center text-center text-white"
         style={{
