@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "../../css/landingpage.css";
-import { AppBar } from "@mui/material";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import VerificationForm from "./VerifyCode";
@@ -10,12 +9,12 @@ import ResetPassword from "./ResetPassword";
 import Login from "./Login";
 import { IC_CHAVER_LOGO } from "../../assets/images";
 import { Link } from "react-router-dom";
-import {
-  InActiveProfileIcon,
-} from "../../assets/icons";
+// import {
+//   InActiveProfileIcon,
+// } from "../../assets/icons";
 import { login } from "../../utils/commonTextFile";
 import LandingPageBody from "../../components/LandingPageBody";
-import { IV_NEW_LOGO } from "../../assets/icons";
+// import { IV_NEW_LOGO } from "../../assets/icons";
 
 const LandingPage = ({ title }: { title: string }) => {
   const style = {

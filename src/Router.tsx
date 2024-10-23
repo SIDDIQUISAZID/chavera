@@ -37,6 +37,7 @@ import ProductDetail from './pages/Products/ProductDetails';
 import EnquiryPage from './pages/Career/Career';
 import CareerPage from './pages/Career/Careers';
 import Contact from './pages/Career/Contact';
+import AboutPage from './pages/Career/About';
 const NotFound = lazy(() => import('./pages/NotFound'));
 
 
@@ -88,6 +89,7 @@ export const ROUTES = {
     CAREER_PAGE:'/enquiry',
     CAREERS_PAGE:'/careers',
     CONTACT_PAGE:'/contact',
+    ABOUT_PAGE:'/about',
 
 }
 // as const
@@ -142,6 +144,7 @@ const Router = () => {
                     <Route path={ROUTES.CAREER_PAGE} element={<EnquiryPage />} />
                     <Route path={ROUTES.CAREERS_PAGE} element={<CareerPage />} />
                     <Route path={ROUTES.CONTACT_PAGE} element={<Contact />} />
+                    <Route path={ROUTES.ABOUT_PAGE} element={<AboutPage />} />
                     
                     <Route path={"*"} element={<NotFound title={`Page Not Found | ${APP_TITLE}`} />} />
 
