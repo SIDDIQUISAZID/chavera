@@ -21,7 +21,7 @@ const ProductList = () => {
     <div className="flex h-fit flex-col items-center">
       
       <div
-        className="flex h-64 w-full items-center justify-center text-center text-white"
+        className="flex h-64 w-full px-4 items-center justify-center text-center text-white"
         style={{
           backgroundImage: `url(${welcomeBackgroundImg})`,
           backgroundSize: "cover",
@@ -37,23 +37,14 @@ const ProductList = () => {
           </p>
         </div>
       </div>
-      <div className="mb-4 flex justify-start">
-        <nav>
-          <Link to="/" className={isActive("/")}>
-            Home
-          </Link>{" "}
-          &gt;
-          <Link to="/products/baxter" className={isActive("/products/baxter")}>
-            Products
-          </Link>
-        </nav>
-      </div>
+      
 
-      <div className="grid grid-cols-1 gap-8 p-8 md:grid-cols-3">
+      <div className="grid grid-cols-1 gap-2 p-4 md:grid-cols-5 ">
         {products.map((product) => (
           <div
             key={product.id}
-            className="flex flex-col rounded-lg border bg-white p-4 "
+            className="flex flex-col rounded-lg border bg-white p-4  cursor-pointer "
+            onClick={() => handleViewDetails(product.id)}
           >
             <img
               src="https://images.stockcake.com/public/2/7/8/2786aaa1-66ae-4360-8af3-160232beced6/medical-equipment-stand-stockcake.jpg"
@@ -61,15 +52,15 @@ const ProductList = () => {
               className="h-48 w-full object-cover"
             />
             <div className="flex-grow">
-              <h2 className="mt-4 text-lg font-medium">{product.name}</h2>
-              <p className="text-gray-500">{product.model}</p>
+              <h2 className="mt-2 text-base text-theme-black">{product.name}</h2>
+              <p className="text-theme-black text-sm">{product.model}</p>
             </div>
-            <Button
+            {/* <Button
               onClick={() => handleViewDetails(product.id)}
-              className="mt-4 h-10 w-fit rounded border-[1px] bg-theme-dark px-3 font-medium text-white sm:px-2"
+              className="mt-4 h-10 w-fit rounded border-[1px] bg-theme-dark px-3 font-medium text-theme-black sm:px-2"
             >
               View Product
-            </Button>
+            </Button> */}
           </div>
         ))}
       </div>

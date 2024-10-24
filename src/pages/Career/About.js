@@ -12,17 +12,13 @@ const AboutPage = () => {
 
   return (
     <div
-      className="w-full items-center"
-      style={{
-        backgroundImage: `url(${welcomeBackgroundImg})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
+      className="w-full items-center bg-[#14bfd916]"
+      
     >
       {/* Header Section */}
-      <div className="flex h-64 w-full items-center justify-center text-center text-white">
+      <div className="flex h-64 w-full items-center justify-center text-center " >
         <div className="rounded-md">
-          <h1 className="text-4xl font-bold">About</h1>
+          <div className="text-xl font-poppins_cf  font-semibold">About</div>
           <p className="mt-4 font-poppins_cf text-lg font-medium">
             “Focusing on Quality, Respect for Life”
           </p>
@@ -30,9 +26,7 @@ const AboutPage = () => {
       </div>
 
       {/* Breadcrumb */}
-      <div className="mt-56 w-full space-y-40 p-4 text-sm text-gray-500">
-        <span>Home</span> &gt; <span className="text-pink-500">About</span>
-      </div>
+ 
 
       {/* Main Content Section */}
       <div className="space-y-15 mt-4 flex flex-col-reverse items-center justify-center md:flex-row md:space-x-6">
@@ -75,7 +69,7 @@ const AboutPage = () => {
       </div>
 
       {/* Image Gallery Section */}
-      <div className="mt-10 mb-10 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 ">
+      <div className="mt-10 mb-10 grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-3  ">
         <img
           src={ABOUT_IMG1}
           alt="Image 1"

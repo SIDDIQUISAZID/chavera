@@ -105,6 +105,12 @@ const Router = () => {
 
             <Route element={<AuthLayout />}>
                 <Route path={ROUTES.LOGIN} element={<LandingPage title={`Login | ${APP_TITLE}`} />} />
+                <Route path={ROUTES.TEST_PLAN_RESULT} element={<Baxter />} />
+                    <Route path={ROUTES.VIEW_BAXTER_DETAILS} element={<ProductDetail />} />
+                    <Route path={ROUTES.CAREER_PAGE} element={<EnquiryPage />} />
+                    <Route path={ROUTES.CAREERS_PAGE} element={<CareerPage />} />
+                    <Route path={ROUTES.CONTACT_PAGE} element={<Contact />} />
+                    <Route path={ROUTES.ABOUT_PAGE} element={<AboutPage />} />
                 <Route element={<DashboardLayout />} >
                     <Route path={ROUTES.DASHBOARD} element={<LandingDashboard />} />
                     <Route path={ROUTES.USER_LIST} element={<UserList />} />
@@ -138,13 +144,8 @@ const Router = () => {
                     <Route path={ROUTES.VIEW_DEVICE_DETAILS} element={<ViewDeviceDetails />} />
                     <Route path={ROUTES.CHECK_DEVICE_AVAILABILITY} element={<CheckdeviceAvailability />} />
                     <Route path={ROUTES.TEST_RESULT_HUB} element={<TestCaseList />} />
-                    <Route path={ROUTES.TEST_PLAN_RESULT} element={<Baxter />} />
                     <Route path={ROUTES.NOTIFICATIONS_DETAILS} element={<NotificationsDetail />} />
-                    <Route path={ROUTES.VIEW_BAXTER_DETAILS} element={<ProductDetail />} />
-                    <Route path={ROUTES.CAREER_PAGE} element={<EnquiryPage />} />
-                    <Route path={ROUTES.CAREERS_PAGE} element={<CareerPage />} />
-                    <Route path={ROUTES.CONTACT_PAGE} element={<Contact />} />
-                    <Route path={ROUTES.ABOUT_PAGE} element={<AboutPage />} />
+                    
                     
                     <Route path={"*"} element={<NotFound title={`Page Not Found | ${APP_TITLE}`} />} />
 

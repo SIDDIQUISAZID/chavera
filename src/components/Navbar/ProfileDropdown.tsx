@@ -108,32 +108,18 @@ const ProfileDropdown = ({ userData }: { userData: UserInfo }) => {
 
   return (
     <div data-testid="ProfileDropdown">
-      <div className="flex items-center gap-3 " ref={profileRef}>
+      <div className="flex items-center gap-3  mx-4" ref={profileRef}>
         <div className="font-poppins_cf text-theme-black flex flex-wrap items-center text-sm mt-1 ">
         <ul className="flex items-center gap-4">
           <li onClick={() => navigate('/about')} className="cursor-pointer mb-2">About</li>
           <li onClick={() => navigate('/enquiry')} className="cursor-pointer mb-2">Enquiry</li>
-          <li onClick={() => navigate('/career')} className="cursor-pointer mb-2">Careers</li>
-          <li onClick={() => navigate('/contactus')} className="cursor-pointer mb-2">Contact Us</li>
+          <li onClick={() => navigate('/careers')} className="cursor-pointer mb-2">Careers</li>
+          <li onClick={() => navigate('/contact')} className="cursor-pointer mb-2">Contact Us</li>
         </ul>
         </div>
-        <div>
-          <div className="flex h-full  truncate">
-            <div className="text-xs text-black">
-              <UserIcon onClick={() => setUserProfileModal(true)} />
-            </div>
-            <div className="mx-2">
-              <div className="font-poppins_cf text-xs font-normal text-theme-black">
-                {userData?.userName}
-              </div>
-              <div className="font-poppins_cf text-sm font-normal text-theme-dark">
-                {userData?.userType}
-              </div>
-            </div>
-          </div>
-        </div>
+       
 
-        <button
+        {/* <button
           role="menu"
           title={isProfileVisible ? "Close profile menu" : "Open profile menu"}
           className="md:border-1 focus:outline-blue-medium mt-1 flex cursor-pointer items-center p-0 text-sm text-gray-dark  dark:bg-gray-800 sm:flex-col md:mt-0 md:flex-row md:space-x-8 md:bg-white md:px-4 md:py-0 md:text-sm  md:font-medium md:dark:bg-gray-900 "
@@ -147,9 +133,9 @@ const ProfileDropdown = ({ userData }: { userData: UserInfo }) => {
               }
             />
           </div>
-        </button>
+        </button> */}
 
-        <div
+        {/* <div
           data-testid="profileMenuList"
           onClick={(e) => e.stopPropagation()}
           className={twMerge(
@@ -157,32 +143,10 @@ const ProfileDropdown = ({ userData }: { userData: UserInfo }) => {
             isProfileVisible ? "block" : "hidden"
           )}
         >
-          <button
-            onClick={() => setUserProfileModal(true)}
-            type="button"
-            className="focus:outline-blue-medium focus:ring-blue-light flex w-full cursor-pointer items-center px-2 py-2 text-left font-medium text-gray-500 hover:text-blue-700 focus:ring-2 dark:hover:text-white dark:focus:text-white dark:focus:ring-gray-500"
-          >
-            <span className="ml-2">Edit Profile</span>
-          </button>
-          <hr></hr>
+          
 
-          <button
-            onClick={() => setLogoutModal(true)}
-            type="button"
-            className="focus:outline-blue-medium focus:ring-blue-light flex w-full cursor-pointer items-center px-2  py-2  text-left font-medium text-gray-500 hover:text-blue-700   focus:ring-2 dark:hover:text-white dark:focus:text-white dark:focus:ring-gray-500"
-          >
-            {isLoading ? (
-              <>
-                <CircleLoader className="!mr-2 h-3 w-3 !text-gray-dark" />
-                Logging out...
-              </>
-            ) : (
-              <>
-                <span className="ml-2"> Log Out</span>
-              </>
-            )}
-          </button>
-        </div>
+         
+        </div> */}
 
         <Modal
           show={logoutModal}

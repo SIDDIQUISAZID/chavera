@@ -266,7 +266,7 @@ const DashboardLayout = () => {
           </AppBar> */}
          
         {/* </div> */}
-        <div className="dashboardLayout overflow-overlay scrollbar-track-blue-lightest scrollbar-thumb-blue-dark  flex h-[calc(100vh-60px)] w-full justify-center overflow-auto bg-[#FAF5FE] p-4 px-4 scrollbar-thin md:h-[calc(100vh-110px)] ">
+        <div className="dashboardLayout overflow-overlay scrollbar-track-blue-lightest scrollbar-thumb-blue-dark  flex  w-full justify-center overflow-auto bg-[#14bfd916] scrollbar-thin ">
           <Suspense fallback={<PageLoader />}>
             <Outlet className="bg-black" />
           </Suspense>
