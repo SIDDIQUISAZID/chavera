@@ -9,6 +9,8 @@ import { FullScreenLoader } from "../../components/Loader";
 import NetConnection from "../../components/NetConnection";
 import { checkLocalTime, removeLocalTime } from "../../hooks/useIdleTimer";
 import { useTokenStatusMutation } from "./authAPI";
+
+
 import {
   selectAuthToken,
   selectCurrentUser,
@@ -22,6 +24,9 @@ const AuthLayout = () => {
   const navigate = useNavigate();
   const dispatch = useAppDispatch();
   const { pathname } = useLocation();
+  const location = useLocation();
+
+
   const [isLoading, setLoading] = useState(true);
   const [checkTokenStatus] = useTokenStatusMutation();
   // will create custom hook later
