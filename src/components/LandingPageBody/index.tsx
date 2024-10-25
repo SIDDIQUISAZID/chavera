@@ -147,7 +147,7 @@ const products: Product[] = [
 
 // Placeholder Images for Medical Devices
 
-// const placeholderLogo = "https://via.placeholder.com/150x50?text=Meditech+Logo"; // Placeholder for logo
+// const placeholderLogo = "https://via.placeholder.com/150x50?text=Chavera+Logo"; // Placeholder for logo
 // const welcomeBackground = IC_WELCOME_LOGO; // Placeholder for welcome background
 const welcomeBackgroundImg = IC_WELCOME_BG;
 const doctorImg = DOCTOR_IMG;
@@ -236,7 +236,7 @@ const LandingPage = () => {
             Welcome to Chavera
           </div>
           <div className=" mb-6  font-poppins_cf  font-normal text-theme-grey text-base">
-            Established in 2011, MEDITECH DEVICES PVT LTD is one of the leading
+            Established in 2011, CHAVERA DEVICES PVT LTD is one of the leading
             medical device manufacturers in West of India, specialized in
             medical disposables for use in dialysis, ICU/anesthesia, oncology,
             and biopsy. We are specialized in short-term and long-term venous

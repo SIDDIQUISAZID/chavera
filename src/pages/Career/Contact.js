@@ -5,7 +5,7 @@ const Contact = () => {
   const welcomeBackgroundImg = IC_WELCOME_BG;
 
   return (
-    <div className="flex h-fit w-full flex-col items-center overflow-hidden">
+    <div className="flex h-fit w-full flex-col items-center overflow-hidden ">
       {/* Top Section with Background Image */}
       <div
         className="flex h-64 w-full items-center justify-center text-center text-white"
@@ -16,20 +16,18 @@ const Contact = () => {
         }}
       >
         <div className="rounded-md">
-
-          <div className="text-2xl font-poppins_w">Contact Us</div>
-          <p className="mt-4 text-sm font-poppins_cf">
+          <div className="font-poppins_w text-2xl">Contact Us</div>
+          <p className="mt-4 font-poppins_cf text-sm">
             You can Contact Us if you have any questions or comments by filling
             out the following form.
           </p>
         </div>
       </div>
 
-     
       {/* Main Content */}
-      <div className="mt-10 flex w-full flex-col justify-between space-y-10 px-4 lg:flex-row lg:space-x-10 lg:space-y-0">
+      <div className="mt-10 flex w-full flex-col justify-between space-y-10 px-20 lg:flex-row lg:space-x-10 lg:space-y-0">
         {/* Contact Form */}
-        <div className="lg:w-2/3">
+        <div className="lg:w-2/4">
           <h2 className="mb-6 text-2xl font-semibold">KEEP IN TOUCH WITH US</h2>
           <form className="space-y-4">
             <div>
@@ -112,31 +110,33 @@ const Contact = () => {
         </div>
 
         {/* Contact Details */}
-        <div className="lg:w-1/3">
+        <div className="lg:w-1/2">
           <h2 className="mb-6 text-2xl font-semibold">CONTACT DETAILS</h2>
           <div className="space-y-6 text-gray-700">
             <div>
-              <h3 className="text-lg font-bold">REGISTERED OFFICE</h3>
-              <p>Meditech Devices Pvt Ltd,</p>
-              <p>24, Gujarat Pharma Techno Park,</p>
-              <p>Opp Zydus Sez, Matoda, Changodar, Ahmedabad - 382213</p>
-              <p>Phone: 9824018924, 9824190943, 7698009820</p>
+              <h3 className="text-lg font-bold mt-10">REGISTERED OFFICE</h3>
+              Regd. Off.: C-34/X-2, Ground Floor, C Block Dilshad Garden,
+              Delhi-110095 Sales Off.: D-2, Second Floor, Pocked B & E, Local
+              Shopping Centre, Chetak Complex, Dilshad Garden, Delhi -110095
+              E-mail : chavera24x7@gmail.com E-mail : chavera24x7@yahoo.co.in
+              Tel.:+91-11-41630860, M.: 9810789138 Coustomer Care No.:
+              9289649690
               <p>
                 Email:{" "}
                 <a
                   href="mailto:sales@meditechdevices.com"
                   className="text-pink-500"
                 >
-                  sales@meditechdevices.com
+                  chavera24x7@gmail.com
                 </a>
               </p>
               <p>
                 Email (International):{" "}
                 <a
-                  href="mailto:export.meditechdevices@gmail.com"
+                  href="mailto:chavera24x7@yahoo.co.in"
                   className="text-pink-500"
                 >
-                  export.meditechdevices@gmail.com
+                 chavera24x7@yahoo.co.in
                 </a>
               </p>
             </div>
@@ -153,8 +153,11 @@ const Contact = () => {
 
             <div>
               <h3 className="text-lg font-bold">AHMEDABAD SALES OFFICE:</h3>
-              <p>8 Indranil Society,</p>
-              <p>Opp Jivraj Park Society, Vejalpur Road, Ahmedabad-380051</p>
+             <div>
+             Regd. Off.: C-34/X-2, Ground Floor, C Block Dilshad Garden,
+              Delhi-110095 Sales Off.: D-2, Second Floor, Pocked B & E, Local
+              Shopping Centre, Chetak Complex, Dilshad Garden, Delhi -110095
+             </div>
             </div>
           </div>
         </div>

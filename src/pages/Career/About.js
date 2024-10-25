@@ -45,7 +45,7 @@ const AboutPage = () => {
             className="h-auto w-64 rounded-lg shadow-lg"
           />
           <p className="font-poppins_cf text-base text-theme-grey">
-            Established in 2011, MEDITECH DEVICES PVT LTD is one of the leading
+            Established in 2011, CHAVERA DEVICES PVT LTD is one of the leading
             medical device manufacturers in West India, specializing in medical
             disposables for use in dialysis, ICU / anesthesia, oncology, and
             biopsy. We specialize in short-term and long-term venous access
@@ -60,7 +60,7 @@ const AboutPage = () => {
             10000 and 6000 Sq Ft of Class 100000 Clean Room area (workshop). The
             production workshop is fully equipped with the latest machinery. The
             quality assurance system is certified and corresponds with
-            ISO-13485, CDSCO, and CE certificates. MEDITECH DEVICES PVT LTD is
+            ISO-13485, CDSCO, and CE certificates. CHAVERA DEVICES PVT LTD is
             one of the largest manufacturers of Dialysis catheters and Central
             Venous catheters in terms of production capacity in India. We have 6
             branch offices located in different parts of India. The company

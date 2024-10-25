@@ -35,12 +35,12 @@ const CareerPage = () => {
       
 
       {/* Main Content Section */}
-      <div className="mt-8 flex w-full flex-col items-start justify-between px-4 lg:flex-row">
+      <div className="mt-8 flex w-full flex-col items-center justify-between  px-4 lg:flex-row">
         {/* Left side content */}
         <div className="text-left lg:w-3/5">
-          <h2 className="text-3xl font-bold text-pink-600">Career</h2>
+         
           <p className="mt-4 text-gray-600">
-            Meditech Devices is a well-established and revolutionary medical
+            Chavera Devices is a well-established and revolutionary medical
             devices company committed to providing high-quality healthcare
             products.
           </p>

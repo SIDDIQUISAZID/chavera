@@ -145,7 +145,7 @@ const AuthLayout = () => {
       <header className="bg-white py-2 text-theme-black shadow-md">
         <div className="mx-auto flex items-center justify-between px-4">
           {/* Logo */}
-          <img src={IC_CHAVER_LOGO} className="h-12" alt="Meditech Logo" />
+          <img src={IC_CHAVER_LOGO} className="h-12" alt="Chavera Logo" />
 
           {/* Navigation */}
 

@@ -32,7 +32,7 @@ const ProductList = () => {
           <div className="text-2xl font-poppins_w">Products</div>
           <p className="mt-4 text-sm font-medium w-1/2 ">
             The branch of medicine that deals with the physiology and diseases
-            of the kidneys. Here at Meditech Devices we offer a wide range of
+            of the kidneys. Here at Chavera Devices we offer a wide range of
             disposable products to provide our patients with quality care.
           </p>
         </div>
