@@ -147,7 +147,7 @@ const products: Product[] = [
 
 // Placeholder Images for Medical Devices
 
-// const placeholderLogo = "https://via.placeholder.com/150x50?text=Chavera+Logo"; // Placeholder for logo
+// const placeholderLogo = "https://via.placeholder.com/150x50?text=Meditech+Logo"; // Placeholder for logo
 // const welcomeBackground = IC_WELCOME_LOGO; // Placeholder for welcome background
 const welcomeBackgroundImg = IC_WELCOME_BG;
 const doctorImg = DOCTOR_IMG;
