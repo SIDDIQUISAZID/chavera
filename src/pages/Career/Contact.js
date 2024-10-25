@@ -16,20 +16,16 @@ const Contact = () => {
         }}
       >
         <div className="rounded-md">
-          <h1 className="text-4xl font-bold">Contact Us</h1>
-          <p className="mt-4 text-lg font-medium">
+
+          <div className="text-2xl font-poppins_w">Contact Us</div>
+          <p className="mt-4 text-sm font-poppins_cf">
             You can Contact Us if you have any questions or comments by filling
             out the following form.
           </p>
         </div>
       </div>
 
-      {/* Breadcrumb */}
-      <div className="w-full p-4 text-sm text-gray-500">
-        <span>Home</span> &gt;{" "}
-        <span className="text-theme-dark">Contact Us</span>
-      </div>
-
+     
       {/* Main Content */}
       <div className="mt-10 flex w-full flex-col justify-between space-y-10 px-4 lg:flex-row lg:space-x-10 lg:space-y-0">
         {/* Contact Form */}

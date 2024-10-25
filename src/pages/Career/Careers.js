@@ -1,5 +1,5 @@
 import React from "react";
-import { IC_WELCOME_BG, IC_ENQUIRY_IMG } from "../../assets/images";
+import { IC_WELCOME_BG, IC_ENQUIRY_IMG,LOGO_BANNER } from "../../assets/images";
 import { useNavigate, Link } from "react-router-dom";
 
 const CareerPage = () => {
@@ -22,24 +22,17 @@ const CareerPage = () => {
         }}
       >
         <div className="rounded-md">
-          <h1 className="text-4xl font-bold">Career</h1>
-          <p className="mt-4 text-lg font-medium">
+         
+          <div className="text-2xl font-poppins_w">Career</div>
+
+          <p className="mt-4 text-sm font-poppins_cf">
             We are looking for dedicated, enthusiastic, and motivated personnel
             interested in working in the Healthcare sector.
           </p>
         </div>
       </div>
 
-      <div className="w-full p-4 text-sm text-gray-500 cursor-pointer">
-        <Link onClick={goBack}>
-          <span>Home</span> &gt;
-        </Link>
-        <Link>
-          <span  className="text-pink-500 cursor-pointer">
-            Career
-          </span>
-        </Link>
-      </div>
+      
 
       {/* Main Content Section */}
       <div className="mt-8 flex w-full flex-col items-start justify-between px-4 lg:flex-row">
@@ -68,9 +61,9 @@ const CareerPage = () => {
         {/* Right side Image */}
         <div className="mt-6 flex justify-center lg:mt-0 lg:w-2/5">
           <img
-            src={enquiryImg}
+            src={LOGO_BANNER}
             alt="Enquiry"
-            className="h-auto w-full rounded-lg object-cover shadow-md"
+            className="h-auto w-full rounded-lg object-contain "
           />
         </div>
       </div>

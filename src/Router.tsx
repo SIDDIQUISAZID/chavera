@@ -47,8 +47,8 @@ export const APP_TITLE = "Dish wireless";
 
 //for all pages route
 export const ROUTES = {
-    LOGIN: "/login",
-    DASHBOARD: "/",
+    LOGIN: "/",
+  //  DASHBOARD: "/",
     USER_LIST: '/user/userList',
     BUCKET_USER_LIST: '/user/userBucket',
     ACCESS_MANAGEMENT: '/deviceHub/access-management',
@@ -84,6 +84,8 @@ export const ROUTES = {
     TEST_PLAN_DETAILS: '/testresultHub/testPlanDetails',
     SCHEDULE_EXECUTE: '/scheduleExecute',
     SCHEDULE_EXECUTE_PLAN: '/scheduleExecute/ScheduleTestPlan/:scheduleType/:startDate/:endDate',
+
+
     TEST_PLAN_RESULT: '/products/baxter',
     VIEW_BAXTER_DETAILS:'products/baxter/details/:id',
     CAREER_PAGE:'/enquiry',
@@ -111,40 +113,14 @@ const Router = () => {
                     <Route path={ROUTES.CAREERS_PAGE} element={<CareerPage />} />
                     <Route path={ROUTES.CONTACT_PAGE} element={<Contact />} />
                     <Route path={ROUTES.ABOUT_PAGE} element={<AboutPage />} />
+                  
+                
                 <Route element={<DashboardLayout />} >
-                    <Route path={ROUTES.DASHBOARD} element={<LandingDashboard />} />
-                    <Route path={ROUTES.USER_LIST} element={<UserList />} />
-                    <Route path={ROUTES.ACCESS_MANAGEMENT} element={<AccessManagement />} />
-                    <Route path={ROUTES.BUCKET_MANAGEMENT} element={<BucketManagement />} />
-                    <Route path={ROUTES.DEVICE_BUCKET} element={<DeviceBucket />} />
-                    <Route path={ROUTES.USER_ACCESS_MANAGEMENT} element={<UserAccessManagement />} />
-                    <Route path={ROUTES.BUCKET_MANAGEMENT_DETAILS} element={<BucketManagementDetails />} />
-                    <Route path={ROUTES.DEVICE_LIST} element={<DeviceList />} />
-                    <Route path={ROUTES.ADD_NEW_USER} element={<AddNewUser />} />
-                    <Route path={ROUTES.TEST_CASE_LIST} element={<TestCaseHub />} />
-                    <Route path={ROUTES.EXECUTED_TEST_CASE} element={<ExecutedTestCase />} />
-                    <Route path={ROUTES.ADD_TEST_CASE} element={<AddTestCase />} />
-                    {/* <Route path={ROUTES.ADD_NEW_TEST_CASE} element={<AddNewTestCase />} /> */}
-                    <Route path={ROUTES.ADD_TEST_CASE_LIST} element={<AddTestCase />} />
-                    <Route path={ROUTES.ITERATION_LIST_RESULT_HUB} element={<IterationListTestResultHub />} />
-                    <Route path={ROUTES.TEST_DETAILS} element={<TestingDetails />} />
-                    <Route path={ROUTES.TEST_Cases_Command} element={<CommandTestCase />} />
-                    <Route path={ROUTES.TEST_CASES_ITERATION} element={<TestCaseIteration />} />
-                    <Route path={ROUTES.TEST_PLAN_LIST} element={<TestPlanHub />} />
-                    <Route path={ROUTES.ADD_PLAN_CASE} element={<AddPlanCase />} />
-                    <Route path={ROUTES.ADD_PLAN_CASE_LIST} element={<AddPlanCase />} />
-                    <Route path={ROUTES.TEST_CASES} element={<TestCases />} />
-                    <Route path={ROUTES.SERVER_CONFIG} element={<ServerConfig />} />
-                    <Route path={ROUTES.SERVER_FILES} element={<ConfigFiles />} />
-                    <Route path={ROUTES.TEST_PLAN_DETAILS} element={<TestPlanDetails />} />
-                    <Route path={ROUTES.SCHEDULE_EXECUTE} element={<ScheduleCalender />} />
-                    <Route path={ROUTES.SCHEDULE_EXECUTE_PLAN} element={<ScheduleTestPlan />} />
+                    
+                    
 
-                   
-                    <Route path={ROUTES.VIEW_DEVICE_DETAILS} element={<ViewDeviceDetails />} />
-                    <Route path={ROUTES.CHECK_DEVICE_AVAILABILITY} element={<CheckdeviceAvailability />} />
-                    <Route path={ROUTES.TEST_RESULT_HUB} element={<TestCaseList />} />
-                    <Route path={ROUTES.NOTIFICATIONS_DETAILS} element={<NotificationsDetail />} />
+
+                    
                     
                     
                     <Route path={"*"} element={<NotFound title={`Page Not Found | ${APP_TITLE}`} />} />

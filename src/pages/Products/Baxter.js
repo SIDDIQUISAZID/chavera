@@ -28,18 +28,18 @@ const ProductList = () => {
           backgroundPosition: "center",
         }}
       >
-        <div className="rounded-md">
-          <h1 className="text-4xl font-bold">{products.name}</h1>
-          <p className="mt-4 text-lg font-medium">
+        <div className="rounded-md flex flex-col items-center">
+          <div className="text-2xl font-poppins_w">Products</div>
+          <p className="mt-4 text-sm font-medium w-1/2 ">
             The branch of medicine that deals with the physiology and diseases
-            of the kidneys. Here at Meditech Devices we offer a wide range of
+            of the kidneys. Here at Chavera Devices we offer a wide range of
             disposable products to provide our patients with quality care.
           </p>
         </div>
       </div>
       
 
-      <div className="grid grid-cols-1 gap-2 p-4 md:grid-cols-5 ">
+      <div className=" flex flex-wrap gap-2 items-center justify-center my-8">
         {products.map((product) => (
           <div
             key={product.id}
@@ -53,7 +53,7 @@ const ProductList = () => {
             />
             <div className="flex-grow">
               <h2 className="mt-2 text-base text-theme-black">{product.name}</h2>
-              <p className="text-theme-black text-sm">{product.model}</p>
+              <p className="text-theme-grey text-sm">{product.model}</p>
             </div>
             {/* <Button
               onClick={() => handleViewDetails(product.id)}

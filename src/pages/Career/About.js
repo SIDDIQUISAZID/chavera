@@ -16,11 +16,18 @@ const AboutPage = () => {
       
     >
       {/* Header Section */}
-      <div className="flex h-64 w-full items-center justify-center text-center " >
+      <div
+        className="flex h-64 w-full items-center justify-center text-center text-white"
+        style={{
+          backgroundImage: `url(${welcomeBackgroundImg})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
         <div className="rounded-md">
-          <div className="text-xl font-poppins_cf  font-semibold">About</div>
-          <p className="mt-4 font-poppins_cf text-lg font-medium">
-            “Focusing on Quality, Respect for Life”
+          <div className="text-2xl font-poppins_cf ">About</div>
+          <p className="mt-4 text-sm font-poppins_cf">
+            Focusing on Quality, Respect for Life
           </p>
         </div>
       </div>
@@ -29,10 +36,15 @@ const AboutPage = () => {
  
 
       {/* Main Content Section */}
-      <div className="space-y-15 mt-4 flex flex-col-reverse items-center justify-center md:flex-row md:space-x-6">
+      <div className="space-y-15 mt-4 flex flex-col-reverse  md:flex-row md:space-x-6">
         {/* Text Content */}
-        <div className="flex flex-1 flex-col justify-center p-6 text-gray-600">
-          <p className="font-poppins_cf text-base text-theme-black">
+        <div className="flex  justify-center gap-4 p-6 text-gray-600">
+        <img
+            src={about_Img}
+            alt="About Us"
+            className="h-auto w-64 rounded-lg shadow-lg"
+          />
+          <p className="font-poppins_cf text-base text-theme-grey">
             Established in 2011, MEDITECH DEVICES PVT LTD is one of the leading
             medical device manufacturers in West India, specializing in medical
             disposables for use in dialysis, ICU / anesthesia, oncology, and
@@ -56,16 +68,8 @@ const AboutPage = () => {
             to becoming one of the leading suppliers of medical devices in the
             Whole World.
           </p>
-        </div>
 
-        {/* Image Section */}
-        <div className="flex flex-1 items-center justify-center">
-          <img
-            src={about_Img}
-            alt="About Us"
-            className="h-auto max-w-full rounded-lg shadow-lg"
-          />
-        </div>
+      </div>
       </div>
 
       {/* Image Gallery Section */}

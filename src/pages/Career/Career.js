@@ -1,5 +1,5 @@
 import React from "react";
-import { IC_WELCOME_BG } from "../../assets/images";
+import { IC_WELCOME_BG ,LOGO_BANNER} from "../../assets/images";
 
 const EnquiryPage = () => {
   const welcomeBackgroundImg = IC_WELCOME_BG;
@@ -14,8 +14,9 @@ const EnquiryPage = () => {
         }}
       >
         <div className="rounded-md">
-          <h1 className="text-4xl font-bold">Enquiry</h1>
-          <p className="mt-4 text-lg font-medium">
+     
+          <div className="text-2xl font-poppins_w">Enquiry</div>
+          <p className="mt-4 text-sm font-poppins_cf">
             For any product-related query, please click on one of the links
             given below.
           </p>
@@ -23,9 +24,7 @@ const EnquiryPage = () => {
       </div>
 
       {/* Breadcrumb */}
-      <div className="w-full p-4 text-sm text-gray-500">
-        <span>Home</span> &gt; <span className="text-pink-500">Enquiry</span>
-      </div>
+     
 
       {/* Main content */}
       <div className="mt-10 flex justify-center space-x-6">

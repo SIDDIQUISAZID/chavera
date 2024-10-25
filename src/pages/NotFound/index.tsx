@@ -21,7 +21,7 @@ const NotFound = ({ title }: { title: string }) => {
                                 The page you are looking for it maybe deleted
                             </p>
                             <Link
-                                to={ROUTES.DASHBOARD}
+                                to={ROUTES.LOGIN}
                                 className="hover:text-primary inline-block rounded-lg border border-white px-8 py-3 text-center text-base font-semibold text-white transition hover:bg-white hover:text-coral"
                             >
                                 Go To Home

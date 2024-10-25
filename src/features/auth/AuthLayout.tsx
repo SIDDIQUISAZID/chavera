@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { Outlet, useLocation, useNavigate } from "react-router-dom";
+import { Link, Outlet, useLocation, useNavigate } from "react-router-dom";
+
 import { toast } from "react-toastify";
 import { z } from "zod";
 import { ROUTES } from "../../Router";
@@ -9,12 +10,11 @@ import NetConnection from "../../components/NetConnection";
 import { checkLocalTime, removeLocalTime } from "../../hooks/useIdleTimer";
 import { useTokenStatusMutation } from "./authAPI";
 import {
-  logoutAction,
   selectAuthToken,
   selectCurrentUser,
-  setOnboard,
-  userRoleId,
 } from "./authSlice";
+import { IC_CHAVER_LOGO } from "../../assets/images";
+import Footer from "../../components/Footer";
 
 const AuthLayout = () => {
   const token = useAppSelector(selectAuthToken);
@@ -48,7 +48,7 @@ const AuthLayout = () => {
         // z.string().email({ message: "Invalid email address" });
         try {
           if (pathname === ROUTES.LOGIN) {
-            navigate(ROUTES.DASHBOARD, { replace: true });
+            navigate(ROUTES.LOGIN, { replace: true });
           }
           //navigate(ROUTES.DASHBOARD, { replace: true })
           // const response = await tokenStatusResult.unwrap()
@@ -125,14 +125,60 @@ const AuthLayout = () => {
   //         }
   //     }
   // })
+
   if (isLoading) {
     return <FullScreenLoader title="Authorizing..." />;
   }
+
+  const linkClasses = (path: any) => {
+    return `text-theme-black font-medium tracking-wide hover:text-red-500 transition-colors duration-300 ease-in-out ${
+      location?.pathname === path ? "underline text-theme-dark" : ""
+    }`;
+  };
   return (
     <>
+      <header className="bg-white py-2 text-theme-black shadow-md">
+        <div className="mx-auto flex items-center justify-between px-4">
+          {/* Logo */}
+          <img src={IC_CHAVER_LOGO} className="h-12" alt="Chavera Logo" />
+
+          {/* Navigation */}
+
+          <nav className="flex flex-wrap items-center space-x-4 font-poppins_cf text-sm text-theme-black">
+            <Link to="/" className={linkClasses("/")}>
+              HOME
+            </Link>
+            
+            <Link
+              to="/products/baxter"
+              className={linkClasses("/products/baxter")}
+            >
+              PRODUCTS
+            </Link>
+            <Link to="/enquiry" className={linkClasses("/enquiry")}>
+              ENQUIRY
+            </Link>
+            <Link to="/careers" className={linkClasses("/careers")}>
+              CAREER
+            </Link>
+
+            <Link to="/contact" className={linkClasses("/contact")}>
+              CONTACT US
+            </Link>
+            <Link to="/about" className={linkClasses("/about")}>
+              ABOUT
+            </Link>
+          </nav>
+          {/* Search Bar */}
+        </div>
+      </header>
+      <div className="dashboardLayout overflow-overlay scrollbar-track-blue-lightest scrollbar-thumb-blue-dark  flex   w-full justify-center overflow-auto bg-[#14bfd916] scrollbar-thin ">
+
       <NetConnection>
         <Outlet />
       </NetConnection>
+      </div>
+      <Footer direction={""} />
     </>
   );
 };

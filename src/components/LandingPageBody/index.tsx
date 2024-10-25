@@ -1,7 +1,5 @@
-import React, { useState } from "react";
-import Footer from "../Footer";
+import { useState } from "react";
 import {
-  IC_WELCOME_LOGO,
   DOCTOR_IMG,
   arabHealthImg,
 } from "../../assets/images";
@@ -9,11 +7,16 @@ import {
 import { useNavigate } from "react-router-dom";
 import {IV_RIGHT_SINGLE } from "../../assets/icons";
 
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 import {
   IC_WELCOME_BG,
-
+  IV_PRO_FIRST,
+  IV_PRO_SECOND,
   IV_PRO_THREE,
+  IV_PRO_FOUR
 } from "../../assets/images";
+import { map } from "zod";
 
 interface Product {
   id: number;
@@ -143,13 +146,8 @@ const products: Product[] = [
 ];
 
 // Placeholder Images for Medical Devices
-const placeholderImage1 =
-  "https://via.placeholder.com/600x400?text=Medical+Device+1";
-const placeholderImage2 =
-  "https://via.placeholder.com/600x400?text=Medical+Device+2";
-const placeholderImage3 =
-  "https://via.placeholder.com/600x400?text=Medical+Device+3";
-// const placeholderLogo = "https://via.placeholder.com/150x50?text=Meditech+Logo"; // Placeholder for logo
+
+// const placeholderLogo = "https://via.placeholder.com/150x50?text=Chavera+Logo"; // Placeholder for logo
 // const welcomeBackground = IC_WELCOME_LOGO; // Placeholder for welcome background
 const welcomeBackgroundImg = IC_WELCOME_BG;
 const doctorImg = DOCTOR_IMG;
@@ -159,9 +157,10 @@ const LandingPage = () => {
   const [activeSlide, setActiveSlide] = useState(0);
 
   const images = [
-    // { src: IV_PRO_FIRST, alt: "Medical Device 1" },
-    // { src: IV_PRO_SECOND, alt: "Medical Device 2" },
+    { src: IV_PRO_FIRST, alt: "Medical Device 1" },
+    { src: IV_PRO_SECOND, alt: "Medical Device 2" },
     { src: IV_PRO_THREE, alt: "Medical Device 3" },
+    { src: IV_PRO_FOUR, alt: "Medical Device 3" },
   ];
 
   const handleNextSlide = () => {
@@ -177,7 +176,7 @@ const LandingPage = () => {
   const navigate = useNavigate();
 
   const handleViewDetails = () => {
-    navigate("/");
+    navigate("/products/baxter");
   };
 
   return (
@@ -194,8 +193,9 @@ const LandingPage = () => {
         }}
         className=" h-fit py-16 text-center text-white font-poppins_cf -z-50"
       >
-        <h1 className="mb-2 text-4xl  pop">Biopsy</h1>
-        <p className="mx-auto max-w-3xl text-lg">
+       
+        <div className="text-2xl font-poppins_w">Biopsy</div>
+        <p className="mx-auto max-w-3xl text-sm">
           For identifying any tissue, we need to take samples of tissue and lab
           test it to identify the disease. We have a wide range of biopsy
           instruments that can take tissue samples from the kidney, liver,
@@ -204,28 +204,26 @@ const LandingPage = () => {
 
         {/* Image Carousel */}
         <div className="relative mx-auto mt-10 w-full max-w-5xl flex flex-col items-center">
-          <div className=" ">
-            <img 
-              src={images[activeSlide].src}
-              alt={images[activeSlide].alt}
-              className="w-72 rounded-lg"
-            />
-            
-          </div>
+        <Carousel showThumbs={false}  className=" w-1/2  "  showArrows={false} autoPlay={true} showStatus={false}>
          
-          <div className="mt-4 flex justify-center space-x-2">
-            {images.map((_, index) => (
-              <button
-                key={index}
-                className={`h-3 w-3 rounded-full ${
-                  activeSlide === index ? "bg-red-600" : "bg-gray-400"
-                }`}
-                onClick={() => setActiveSlide(index)}
-              ></button>
-            ))}
-          </div>
+           {images.map((item)=>
+             <img 
+             src={item.src}
+             alt={item.alt}
+             className=" h-72 w-1/2 rounded-lg"
+           />
+           )}
+            
+          
+          </Carousel>
+          
+         
+          
         </div>
+       
       </div>
+
+      
 
       <div
         className=" p-10  justify-between items-center "
@@ -257,7 +255,7 @@ const LandingPage = () => {
       
       </div>
 
-      <section className="bg-gray-100 px-20 py-20">
+      <section className="bg-gray-100 px-20 py-10">
         <div className="mx-auto mb-12 text-center">
           <h2 className="text-4xl font-medium text-theme-black font-poppins_w">Our Products</h2>
           <p className="text-theme-grey text-base font-poppins_cf">
@@ -302,7 +300,7 @@ const LandingPage = () => {
             <img
               src={arabHealthImg1}
               alt="Arab Health Event"
-              className="mt-4  h-24 "
+              className="  h-24 "
             />
             <p className="mt-4 font-medium text-red-500">
               30 January - 2 February 2017
@@ -315,7 +313,7 @@ const LandingPage = () => {
          <img
             src={doctorImg}
             alt="Doctor"
-            className=" relative"
+            className=" relative -mt-48 -z-50"
           />
          
         </div>
@@ -324,7 +322,7 @@ const LandingPage = () => {
           
       
         <div className="">
-            <div className="text-xl font-semibold text-theme-black my-10">
+            <div className="text-xl font-semibold text-theme-black my-10 mb-5">
               Download Our Brochures
             </div>
             <ul className="space-y-1 flex gap-2 flex-col">
@@ -351,10 +349,6 @@ const LandingPage = () => {
        
       </div>
 
-      <div className=" mx-auto  w-full ">
-        {" "}
-        <Footer />
-      </div>
     </div>
   );
 };
